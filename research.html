@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MODELLING CYTOSKELETAL NETWORKS — Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="masthead">
+        <div class="masthead-title">MODELLING CYTOSKELETAL NETWORKS</div>
+        <div class="masthead-label">PhD</div>
+      </div>
+      <hr class="rule-thick">
+      <div class="info-nav-row">
+        <div class="site-info">
+          <span>Ariella Raz</span>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="research.html" class="active">Research</a>
+          <a href="training.html">Training</a>
+          <a href="about.html">About</a>
+          <a href="cv.html">CV</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-grid research-page">
+      <aside>
+        <div class="meta-block" aria-label="Research metadata">
+          <div class="meta-row">
+            <div class="meta-label">Research aim</div>
+            <div class="meta-value">Identify minimal cytoskeletal signalling interaction structures that organise lamellipodial protrusion dynamics and migration persistence.</div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-label">Data</div>
+            <div class="meta-value">Live cell imaging time series from experimental collaborators measuring protein activity and membrane dynamics.</div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-label">Model</div>
+            <div class="meta-value">Data informed dynamical systems models progressing from ODE descriptions to spatial reaction diffusion PDEs along the cell edge.</div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-label">Nonlinearity</div>
+            <div class="meta-value">Retrograde actin flow and force velocity coupling between actin polymerisation and membrane motion.</div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-label">Computation</div>
+            <div class="meta-value">Numerical simulation of dynamical systems and PDE models; finite element methods where spatial discretisation is required.</div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="page-main" aria-label="Research main content">
+        <div>
+          <h1 class="page-title">
+            Current Work
+          </h1>
+        </div>
+
+        <div class="page-body">
+          <h2 class="section-subheader lead-subheader">Mathematical modelling of cytoskeletal signalling circuits controlling lamellipodial protrusion and persistent cell migration</h2>
+          <p>
+            My research develops data-informed dynamical systems models to understand how interactions within the actin cytoskeleton generate organised protrusion dynamics at the leading edge of migrating cells.
+          </p>
+
+          <h2 class="section-subheader">Biological Context</h2>
+          <p>
+            Cell migration plays an important role in wound healing, immune response, and cancer metastasis. Migrating cells extend protrusions at their leading edge called lamellipodia, where actin polymerisation drives membrane motion.
+          </p>
+          <p>
+            Experimental work suggests that regulators such as Lamellipodin (Lpd), NHSL1, ARPIN, and Rac signalling form interacting feedback and feedforward circuits that control protrusion dynamics and migration persistence.
+          </p>
+          <h2 class="section-subheader">Modelling Objective</h2>
+          <p><strong>The central modelling question is:</strong></p>
+          <p>
+            Which minimal interaction structures are sufficient to organise protrusion dynamics and persistent migration?
+          </p>
+          <p>
+            The aim is to identify reduced dynamical systems that capture the key behaviours observed experimentally while avoiding unnecessary biochemical complexity.
+          </p>
+
+          <h2 class="section-subheader">Modelling Framework</h2>
+          <p>The modelling strategy proceeds in stages:</p>
+          <p>
+            <strong>Data interpretation:</strong> analyse time series derived from live-cell imaging experiments measuring protein activity and membrane motion.<br>
+            <strong>Circuit reconstruction:</strong> identify candidate feedback and feedforward interaction structures within cytoskeletal signalling networks.<br>
+            <strong>Dynamical systems modelling:</strong> construct minimal ODE models describing the temporal dynamics of the signalling circuits.<br>
+            <strong>Spatial extension:</strong> extend the models to spatial reaction-diffusion PDEs defined along the cell edge.<br>
+            <strong>Analysis:</strong> investigate stability, oscillatory behaviour, and spatial coordination within the inferred models.
+          </p>
+
+          <h2 class="section-subheader">Nonlinear Mechanisms</h2>
+          <p>
+            Key nonlinear processes incorporated in the modelling include retrograde actin flow, force-velocity coupling between actin polymerisation and membrane motion, and positive and negative feedback within signalling circuits.
+          </p>
+          <p>
+            These mechanisms are hypothesised to generate oscillatory protrusion cycles and regulate migration persistence.
+          </p>
+
+          <h2 class="section-subheader">Computational Methods</h2>
+          <p>
+            The models are simulated using numerical methods for dynamical systems and partial differential equations.
+          </p>
+          <p>
+            Computational tools include Python-based simulation workflows, finite element discretisation where spatial modelling is required, and FEM frameworks such as Firedrake.
+          </p>
+
+          <h2 class="section-subheader">Collaboration</h2>
+          <p>
+            This project is carried out in close collaboration with an experimental cytoskeleton research group. High-resolution imaging experiments provide time-series measurements of protein activity and membrane dynamics.
+          </p>
+          <p>
+            Model development and experimental analysis proceed iteratively, with simulations used to interpret experimental observations and guide further experiments.
+          </p>
+
+          <h2 class="section-subheader">Long-Term Goal</h2>
+          <p>
+            The broader aim is to develop mechanistic mathematical models that clarify how cytoskeletal signalling circuits regulate cell migration and how these mechanisms may change in metastasising cancer cells.
+          </p>
+        </div>
+
+        <div class="page-links">
+          <span>Navigate:</span>
+          <a href="index.html">Home</a>
+          <a href="training.html">Training</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

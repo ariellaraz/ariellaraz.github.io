@@ -1,0 +1,568 @@
+/* Typography */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f7f3ec; /* warm off-white */
+  color: #151514; /* near-black */
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Page shell */
+.page-wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 3rem 2.5rem 4rem;
+}
+
+/* Masthead */
+.masthead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.masthead-title {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  font-size: 3.4rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.masthead-label {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.rule-thick {
+  border: 0;
+  border-top: 4px solid #d0ccc5; /* subtle grey */
+  margin: 0 0 0.4rem;
+}
+
+/* Info + navigation row */
+.info-nav-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.82rem;
+  border-bottom: 1px solid #ded9d0;
+  padding-bottom: 0.4rem;
+  margin-bottom: 3rem;
+}
+
+.site-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  color: #555147;
+}
+
+.site-info span:first-child {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.site-info span::after {
+  content: "•";
+  margin-left: 0.6rem;
+}
+
+.site-info span:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  justify-content: flex-end;
+}
+
+.site-nav a {
+  font-size: 0.85rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.site-nav a.active {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+/* Main grid */
+.page-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
+  gap: 3.5rem;
+}
+
+.page-grid-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.training-page .page-title,
+.training-page .page-body {
+  max-width: none;
+}
+
+.training-page .page-title {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  text-transform: uppercase;
+}
+
+.about-page .page-title {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  text-transform: uppercase;
+}
+
+.contact-page .page-title {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  text-transform: uppercase;
+}
+
+.research-page aside {
+  padding-top: 4.2rem;
+}
+
+.research-page .page-title {
+  margin: 0;
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.research-page .page-title,
+.training-page .page-title,
+.about-page .page-title,
+.contact-page .page-title,
+.cv-page .page-title {
+  display: inline-block;
+  border-bottom: 1px solid #d0ccc5;
+  padding-bottom: 0.35rem;
+}
+
+.research-page .section-subheader {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.research-page .lead-subheader {
+  font-size: 1.35rem;
+}
+
+.research-page .page-body .section-subheader {
+  border-top: 1px solid #e4dfd6;
+  padding-top: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.research-page .page-body .section-subheader:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0.2rem;
+}
+
+.training-page .page-body .section-subheader {
+  text-transform: uppercase;
+  border-top: 1px solid #e4dfd6;
+  padding-top: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.training-page .page-body .section-subheader:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0.2rem;
+}
+
+aside {
+  font-size: 0.88rem;
+}
+
+.meta-block {
+  border-top: 1px solid #ded9d0;
+}
+
+.about-headshot {
+  margin: 0 auto 2rem;
+  width: 220px;
+  max-width: 100%;
+}
+
+.about-headshot img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #d0ccc5;
+}
+
+.home-intro {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  font-size: 1.03rem;
+  line-height: 1.7;
+  max-width: 20rem;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.home-intro p {
+  margin: 0 0 0.5rem;
+  font-weight: 400;
+}
+
+.home-overview-title {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #151514;
+  font-weight: 400;
+}
+
+.home-aside .meta-label,
+.home-aside .meta-value {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  font-size: 1rem;
+}
+
+.home-aside .meta-label {
+  flex: 0 0 8.4rem;
+  font-weight: 700;
+  padding-right: 0.35rem;
+}
+
+.home-aside .meta-value {
+  font-weight: 400;
+}
+
+.about-page .meta-label,
+.about-page .meta-value {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  font-size: 1rem;
+}
+
+.about-page .meta-label {
+  flex: 0 0 8.4rem;
+  font-weight: 700;
+  padding-right: 0.35rem;
+}
+
+.about-page .meta-value {
+  font-weight: 400;
+}
+
+.research-page .meta-label,
+.research-page .meta-value,
+.contact-page .meta-label,
+.contact-page .meta-value,
+.cv-page .meta-label,
+.cv-page .meta-value {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  font-size: 1rem;
+}
+
+.research-page .meta-label,
+.contact-page .meta-label,
+.cv-page .meta-label {
+  flex: 0 0 8.4rem;
+  font-weight: 700;
+  padding-right: 0.35rem;
+}
+
+.research-page .meta-value,
+.contact-page .meta-value,
+.cv-page .meta-value {
+  font-weight: 400;
+}
+
+.meta-row {
+  display: flex;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #e4dfd6;
+}
+
+.meta-label {
+  flex: 0 0 7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6a655a;
+  font-size: 0.76rem;
+}
+
+.meta-value {
+  flex: 1;
+}
+
+.snapshot-table {
+  margin-top: 1.4rem;
+  border-top: 1px solid #ded9d0;
+}
+
+.snapshot-title {
+  padding: 0.4rem 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6a655a;
+}
+
+.snapshot-row {
+  display: flex;
+  padding: 0.45rem 0;
+  border-top: 1px solid #e4dfd6;
+}
+
+.snapshot-key {
+  flex: 0 0 9.5rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.snapshot-value {
+  flex: 1;
+  font-size: 0.8rem;
+}
+
+/* Right column content */
+.page-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.page-main-home .page-kicker,
+.page-main-home .page-title {
+  display: none;
+}
+
+.home-affiliation {
+  margin-top: 1.2rem;
+  font-size: 0.8rem;
+  color: #8a8478;
+  white-space: nowrap;
+}
+
+.page-kicker {
+  font-size: 0.76rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8a8478;
+}
+
+.page-title {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  font-size: 2.1rem;
+  line-height: 1.25;
+  max-width: 36rem;
+}
+
+.page-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 34rem;
+}
+
+.page-body p {
+  margin: 0 0 0.85rem;
+}
+
+.section-subheader {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  margin: 1rem 0 0.5rem;
+}
+
+.page-body ul {
+  margin: 0.4rem 0 0.8rem 1.1rem;
+  padding: 0;
+}
+
+.page-body li {
+  margin-bottom: 0.35rem;
+}
+
+/* Figure block */
+.figure-block {
+  border: 1px solid #d0ccc5;
+  padding: 1.2rem 1.2rem 1rem;
+  margin-top: 0.4rem;
+}
+
+.figure-image-placeholder {
+  border: 1px dashed #d0ccc5;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  color: #8a8478;
+  text-align: center;
+  padding: 1rem;
+}
+
+.figure-caption {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: #6a655a;
+}
+
+.page-main-home .figure-block {
+  border: none;
+  padding: 0;
+}
+
+/* Optional headshot placeholder */
+.headshot-placeholder {
+  margin-top: 1rem;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  border: 1px solid #d0ccc5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: #8a8478;
+}
+
+/* Bottom links row within page */
+.page-links {
+  margin-top: 0.4rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid #e4dfd6;
+  font-size: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  color: #6a655a;
+}
+
+.page-links a {
+  text-decoration: none;
+}
+
+.page-links a:hover {
+  text-decoration: underline;
+}
+
+/* CV button */
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #b2664b; /* muted accent */
+  border-radius: 999px;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #5a4034;
+  text-decoration: none;
+}
+
+.cv-button:hover {
+  background-color: #f0e3d6;
+  text-decoration: none;
+}
+
+.cv-note {
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  color: #6a655a;
+}
+
+/* Contact list */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0;
+  font-size: 0.95rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* Responsiveness */
+@media (max-width: 980px) {
+  .page-wrapper {
+    padding: 1.8rem 1.2rem 2.4rem;
+  }
+
+  .masthead {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-nav-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+  }
+
+  .page-grid {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+
+  .research-page aside {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .masthead-title {
+    font-size: 1.8rem;
+  }
+
+  .masthead-label {
+    font-size: 1.3rem;
+  }
+
+  .home-affiliation {
+    white-space: normal;
+  }
+}
