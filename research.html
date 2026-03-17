@@ -37,15 +37,15 @@
         <div class="meta-block" aria-label="Research metadata">
           <div class="meta-row">
             <div class="meta-label">Research aim</div>
-            <div class="meta-value">Identify minimal dynamical mechanisms within cytoskeletal signalling networks that organise lamellipodial protrusion and persistent cell migration.</div>
+            <div class="meta-value">Identify minimal dynamical mechanisms within cytoskeletal circuits that regulate polarised lamellipodial protrusion, persistence, and directed migration, and how these are altered in cancer cells.</div>
           </div>
           <div class="meta-row">
             <div class="meta-label">Data</div>
-            <div class="meta-value">Quantitative measurements from live-cell imaging experiments tracking cytoskeletal protein activity and membrane dynamics at the leading edge of migrating cells.</div>
+            <div class="meta-value">Quantitative measurements from collaborator-led live-cell imaging experiments tracking cytoskeletal protein activity and membrane dynamics at the leading edge of migrating cells.</div>
           </div>
           <div class="meta-row">
             <div class="meta-label">Model</div>
-            <div class="meta-value">Data-informed dynamical systems models describing interactions between cytoskeletal regulators, ranging from reduced ODE systems to spatial reaction-diffusion PDE models along the cell edge.</div>
+            <div class="meta-value">Parameterised dynamical systems models of cytoskeletal regulation, ranging from reduced ODE systems to reaction-diffusion PDEs on evolving cell surfaces coupled to membrane dynamics.</div>
           </div>
           <div class="meta-row">
             <div class="meta-label">Nonlinearity</div>
@@ -53,7 +53,7 @@
           </div>
           <div class="meta-row">
             <div class="meta-label">Computation</div>
-            <div class="meta-value">Numerical simulation and analysis of dynamical systems and PDE models using scientific computing methods, including finite element techniques where spatial discretisation is required.</div>
+            <div class="meta-value">Numerical simulation, parameter estimation, and analysis of PDE models using scientific computing methods, including evolving surface finite element techniques.</div>
           </div>
         </div>
       </aside>
@@ -61,18 +61,18 @@
       <section class="page-main" aria-label="Research main content">
         <div>
           <h1 class="page-title">
-            Research Areas
+            PhD Research
           </h1>
         </div>
 
         <div class="page-body">
           <h2 class="section-subheader lead-subheader">Current Work</h2>
-          <p><strong>Mathematical Modelling of Cytoskeletal Signalling Circuits Controlling Lamellipodial Protrusion and Persistent Cell Migration</strong></p>
+          <p><strong>Systems-Level Modelling of Cytoskeletal Networks Controlling Cancer Cell Migration</strong></p>
           <p>
-            My research develops mathematical models to understand how cytoskeletal signalling networks regulate cell protrusion and migration.
+            My research focuses on the mathematical modelling component of the wider CytoNet project, developing systems-level models to understand how cytoskeletal networks regulate cancer cell migration.
           </p>
           <p>
-            The modelling approach focuses on reduced dynamical systems that capture the essential mechanisms underlying cytoskeletal signalling while avoiding unnecessary biochemical complexity.
+            The modelling approach focuses on reduced dynamical systems that capture the essential regulatory mechanisms underlying polarised protrusion, persistence, and migration while avoiding unnecessary biochemical complexity.
           </p>
 
           <h2 class="section-subheader">Biological Context</h2>
@@ -83,61 +83,58 @@
             Migrating cells extend protrusions at their leading edge known as lamellipodia, where actin polymerisation drives membrane advancement.
           </p>
           <p>
-            Experimental studies suggest that regulators such as Lamellipodin (Lpd), NHSL1, ARPIN, and Rac signalling form interacting regulatory circuits that influence protrusion dynamics and migration persistence.
+            A central question in the project is how persistence is regulated during directed migration in non-transformed cells and how this regulation is altered in cancer cells.
           </p>
-
-          <figure class="figure-block">
-            <img src="Images/CytoNET-Loops.png" alt="Schematic of candidate cytoskeletal signalling circuits for lamellipodial protrusion and persistent migration.">
-            <figcaption class="figure-caption">
-              Figure. Schematic representation of candidate cytoskeletal signalling circuits regulating lamellipodial protrusion and persistent cell migration.
-            </figcaption>
-          </figure>
 
           <h2 class="section-subheader">Modelling Objective</h2>
           <p>The central modelling question is:</p>
           <p>
-            Which minimal dynamical interaction structures are sufficient to organise cytoskeletal activity and persistent cell migration?
+            Which minimal dynamical interaction structures are sufficient to organise cytoskeletal activity, sustained protrusion, and directed cell migration?
           </p>
           <p>
-            The aim is to construct reduced mathematical models that capture experimentally observed behaviours while avoiding unnecessary biochemical complexity.
+            The aim is to construct reduced mathematical models that capture essential features of cytoskeletal regulation while remaining focused on the mathematics of the core regulatory circuitry.
           </p>
 
           <h2 class="section-subheader">Research Approach</h2>
           <p>
-            The modelling strategy combines experimental observations with dynamical systems theory.
+            The modelling strategy combines biological motivation, published literature, and dynamical systems theory to study the cytoskeletal circuits underlying protrusion, persistence, and directed migration.
           </p>
           <p>
             <strong>Data interpretation</strong><br>
-            Quantitative imaging data is used to inform and constrain candidate dynamical models of cytoskeletal activity.
+            Quantitative observations and published experimental results are used to inform and constrain candidate dynamical models of cytoskeletal activity and protrusion dynamics.
           </p>
           <p>
             <strong>Model construction</strong><br>
-            Minimal interaction networks are proposed to represent regulatory relationships between cytoskeletal components.
+            Minimal interaction networks are proposed to represent key regulatory relationships within cytoskeletal signalling.
           </p>
           <p>
             <strong>Dynamical systems modelling</strong><br>
-            Reduced ODE systems are used to investigate the temporal behaviour of signalling circuits.
+            Reduced ODE systems are used to investigate the temporal behaviour of signalling circuits, including feedback loops capable of generating oscillations, persistence, and polarity.
           </p>
           <p>
             <strong>Spatial modelling</strong><br>
-            Models are extended to spatial reaction-diffusion PDE systems describing signalling dynamics along the cell edge.
+            Models are extended to spatial reaction-diffusion PDE systems on evolving cell surfaces, coupled to membrane mechanics and, where required, retrograde flow and external chemotactic or haptotactic cues.
           </p>
           <p>
             <strong>Analysis</strong><br>
-            Stability, oscillatory behaviour, and spatial coordination within the models are investigated using analytical and computational methods.
+            Stability, oscillatory behaviour, pattern formation, persistence, and spatial coordination within the models are investigated using analytical and computational methods.
+          </p>
+          <p>
+            <strong>Biological settings</strong><br>
+            The models are designed to study random migration, chemotaxis, and haptotaxis, and to help explain how migration control differs between non-transformed cells and metastasising cancer cells.
           </p>
 
           <h2 class="section-subheader">Collaboration</h2>
           <p>
-            This research is carried out in collaboration with an experimental cytoskeleton research group at King’s College London. High-resolution live-cell imaging experiments provide quantitative measurements of protein activity and membrane dynamics at the leading edge of migrating cells.
+            This work forms the mathematical modelling strand of a broader interdisciplinary project. My main supervisor is Chandrasekhar Venkataraman at the University of Sussex, and the project is carried out in collaboration with an experimental cytoskeleton research group at King’s College London.
           </p>
           <p>
-            Model development and experimental analysis proceed iteratively, with simulations used to interpret experimental observations and guide further experimental investigation.
+            Model development and experimental work proceed iteratively, with simulations used to interpret observations, explore candidate mechanisms, and help guide further investigation.
           </p>
 
           <h2 class="section-subheader">Long-Term Goal</h2>
           <p>
-            The long-term aim of this research is to develop mechanistic mathematical models that clarify how cytoskeletal signalling networks regulate cell migration. By identifying the dynamical mechanisms that organise protrusion and migration persistence, these models aim to provide a theoretical framework for understanding how migration behaviour arises in biological systems and how it may change in contexts such as cancer metastasis, wound healing, and immune cell motility.
+            The long-term aim of this research is to develop mechanistic mathematical models that clarify how cytoskeletal networks regulate migration behaviour and how that regulation changes in cancer cells. By identifying the dynamical mechanisms that organise protrusion and migration persistence, these models aim to provide a theoretical framework for understanding how migration behaviour arises in biological systems and how it may be altered in metastatic disease.
           </p>
         </div>
 
